@@ -24,7 +24,7 @@ OUTPUT_VIDEO_PATH = f'./vlm_outputs/vlm_finetuned_v3_fast_output_{VLM_CONF_THRES
 
 ZONE = np.array([[100, 500], [800, 500], [450, 200]], np.int32)
 
-class SmartTracker:
+class KalmanTracker:
     def __init__(self):
         self.next_track_id = 0
         self.tracks = {}
