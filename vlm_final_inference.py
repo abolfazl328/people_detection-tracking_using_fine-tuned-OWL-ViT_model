@@ -10,11 +10,11 @@ from PIL import Image
 
 
 
-TEXT_PROMPTS = ["person", "a person walking"] 
-VLM_CONF_THRESHOLD = 0.1 # Confidence threshold for VLM detections
+TEXT_PROMPTS = ["a person"]
+VLM_CONF_THRESHOLD = 0.3 # Confidence threshold for VLM detections
 
-IOU_THRESHOLD = 0.5    # More aggressive IOU for greedy matching
-MAX_AGE = 10          # The maximum number of frames a track can be "lost"
+IOU_THRESHOLD = 0.4    # More aggressive IOU for greedy matching
+MAX_AGE = 15          # The maximum number of frames a track can be "lost"
 MIN_HITS = 15           # The minimum number of hits to confirm a track
 
 INPUT_VIDEO_PATH = './input.mp4'
