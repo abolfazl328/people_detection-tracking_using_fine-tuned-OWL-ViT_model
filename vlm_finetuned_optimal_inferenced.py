@@ -129,7 +129,7 @@ with torch.no_grad():
     # Keep text inputs on GPU
     text_inputs = {k: v for k, v in text_inputs.items()}
 
-tracker = SmartTracker()
+tracker = KalmanTracker()
 cap = cv2.VideoCapture(INPUT_VIDEO_PATH)
 
 width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
